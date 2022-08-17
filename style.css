@@ -1,0 +1,70 @@
+:root{
+    --blue1: #287bff;
+    --blue2: #0ab6b4;
+    --blue3: #03cad8;
+    --blue4: #90f5ec;
+    --blue5: #288287;
+    --grey1: #65847c;
+    --black1: #0b0811;
+    --black2: #999;
+    --white: #d9ebea;
+}
+body{
+    background: var(--white);
+}
+#app{
+    text-align: center;
+    justify-items: center;
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+header{
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--black1);
+}
+.cardsBox{
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    margin-left: 250px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+.cardsBox a{
+    text-decoration: none;
+}
+.cardsBox .cards{
+    position: relative;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+.cardsBox .cards .icon-card{
+    font-size: 6em;
+    color: var(--blue5);
+}
+.cardsBox .cards .value{
+    position: relative;
+    font-weight: 500;
+    font-size: 2em;
+    padding-top: 20px;
+    text-decoration: none;
+    color: var(--blue2);
+}
+.cardsBox .cards:hover{
+    background: var(--blue5);
+}
+.cardsBox .cards:hover .value,
+.cardsBox .cards:hover .icon-card
+{
+    color: var(--blue3);
+}
