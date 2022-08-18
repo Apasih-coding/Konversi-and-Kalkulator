@@ -16,7 +16,7 @@
             <div class="input-amount">
                 <div class="text">Input Amount :</div>
                 <div class="form-amount">
-                    <input type="number" name="amount" placeholder="1" required>
+                    <input type="number" name="amount" value="1">
                 </div>
             </div>
             <div class="from-list">
@@ -24,11 +24,7 @@
                     <p>From</p>
                     <div class="select-box">
                         <img src="https://countryflagsapi.com/png/us" alt="">
-                        <select name="country" id="">
-                            <option value="USD">USD</option>
-                            <option value="IDR">IDR</option>
-                            <option value="NPR">NPR</option>
-                        </select>
+                        <select></select>
                     </div>
                 </div>
                 <i class="fa-solid fa-right-left"></i>
@@ -36,18 +32,17 @@
                     <p>To</p>
                     <div class="select-box">
                         <img src="https://countryflagsapi.com/png/id" alt="">
-                        <select name="country" id="">
-                            <option value="IDR">IDR</option>
-                            <option value="USD">USD</option>
-                            <option value="NPR">NPR</option>
-                        </select>
+                        <select></select>
                     </div>
                 </div>
             </div>
-            <div class="result">1 USD = 14.560 IDR</div>
-            <button type="submit" class="btn-submit">Get Result</button>
+            <div class="results">Getting exchange rate...</div>
+            <button>Get Result</button>
         </form>
     </div>
+
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
