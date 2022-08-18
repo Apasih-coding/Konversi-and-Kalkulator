@@ -52,7 +52,8 @@ function getResult(){
         amountValue = 1;
     }
     exchangerateTxt.innerText = "Getting exchange rate...";
-    let url = `https://v6.exchangerate-api.com/v6/00eacaeec707be11ed81dccb/latest/${fromCurrency.value}`;
+    // register https://www.exchangerate-api.com/ untuk mendapatkan API KEY
+    let url = `https://v6.exchangerate-api.com/v6/API-KEY/latest/${fromCurrency.value}`;
     fetch(url).then(response => response.json()).then(result =>{
         let exchangerate = result.conversion_rates[toCurrency.value];
         let totalExchangeRate = (amountValue * exchangerate).toFixed(2);
